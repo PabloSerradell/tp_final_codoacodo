@@ -1,0 +1,334 @@
+nav img{
+    width: 120px;
+}
+
+nav{
+    background-color: #353a40;
+}
+
+.space-araund{
+    display: flex;
+    justify-content: space-around !important;
+}
+/* Hasta acá todo lo relacionado al navbar */
+
+/* Css del contenido del carousel */
+.height-carousel img{
+    filter: brightness(50%);
+}
+
+.height-carousel{
+    max-height: 550px;
+    display: flex;
+    align-items: center;
+}
+/* Hasta acá css del carousel */
+
+/* Css del texto que se ve dentro del carousel */
+.texto-breve{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: white;
+    position: absolute;
+    right: 115px;
+    top: 199px;
+}
+
+.btn-margin{
+    margin: 4px;
+}
+/* Fin del css del texto que se ve dentro del carousel */
+
+.container-3cards{
+    margin: 0px 150px;    /* Un margen en los costados al conjunto de tres cartas */
+}
+
+/* Título arriba de las cards */
+#h2-1{
+    font-size: 11px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.padre-h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Fin css del título arriba de las cards */
+
+/* Css del contenido de las cards */
+.card-text{
+    font-size: 12px;
+}
+
+.badge{
+    padding: 4px;
+}
+
+.react-span{
+    background-color: #1aa0b9 !important;
+}
+/* Fin del css del contenido de las cards */
+
+/* Css de la card de playa */
+.col-md-4{
+    width: 50%;
+}
+
+.col-md-8{
+    width: 50%;
+    color: white;
+    background-color: #34393f;
+}
+
+.btn-playa{
+    padding: 4px 6px;
+}
+
+.margin-playa{
+    padding-right: 0.5px;
+}
+
+.top-margin-playa{
+    margin: 25px 0px;
+}
+/* Fin css de la card de playa */
+
+/* Oculto la card de playa que muestro cuando se achica la pantalla a 700px */
+.display-playa{
+    display: none;
+}
+
+/* Css del formulario */
+.inputs-form{
+    width: 298px;
+    display: inline-block;
+    margin: 0px 10px 15px 10px;
+    padding: 2px 4px;
+    font-size: 12px;
+}
+
+.container-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textarea-css{
+    width: 620px;
+    height: 100px;
+}
+                    /* Botón "Enviar" del formulario */
+.btn-form{
+    width: 620px;
+    background-color: #96c93e;
+    border-color: #96c93e;
+    margin: 15px 0px;
+}
+
+.btn-form:hover{
+    background-color: #88b639;
+    border-color: #88b639;
+}
+
+.btn-form:focus{
+    background-color: #96c93e;
+    border-color: #96c93e;
+    box-shadow: none;
+}
+                    /* Fin del css del botón "Enviar" del formulario */
+#h3-form{
+    font-size: 10px;
+}
+
+#h3-form-2{
+    font-size: 25px;
+}
+
+.p-form{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.p-form-2{
+    font-size: 11px;
+    color: rgb(150, 144, 144);
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+/* Fin css del formulario */
+
+/* Css del footer */
+footer{
+    background: linear-gradient(to right, #1a3644, #1c5372);
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: white;
+}
+
+.centrar-row{
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.col-footer{
+    margin: 16px;
+}
+/* Fin css del footer */
+
+/* --- Inicio css página de tickets --- */
+/* Cards con info de descuentos */
+.tamano-card{
+    max-width: 190px;
+    max-height: 190px;
+    margin: 20px 3px 0px 0px;
+}
+
+.text-size{
+    font-size: 15px;
+}
+
+.text-size2{
+    font-size: 12px;
+}
+
+.negrita{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.center-cards{
+    display: flex;
+    justify-content: center;
+}
+
+.bord1{
+    border: 1.5px solid #3193fc;
+}
+
+.bord2{
+    border: 1.5px solid #41b3c4;
+}
+
+.bord3{
+    border: 1.5px solid #f7c940;
+}
+/* Fin css de cards con info de descuentos */
+
+/* Css del formulario */
+#h3-tickets{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#h3-tickets-2{
+    font-size: 30px;
+    margin-top: -4px;
+}
+
+.input-tickets{
+    width: 300px;
+    margin: 10px -6px 15px -6px;
+}
+
+.input-tickets2{
+    width: 612px;
+}
+/* Cartel que indica el total a pagar */
+.total-pago{
+    display: flex;
+    align-items: center;
+    width: 612px;
+    height: 50px;
+    background-color: #cce5ff;
+    border: 1px solid #b3d7ff;
+    border-radius: 4px;
+    color: #205f9d;
+}
+
+/* Botones borrar y resumen */
+.btn-form-tickets{
+    width: 300px;
+    background-color: #96c93e;
+    border-color: #96c93e;
+    margin: 10px 4px 15px 4px;
+}
+/* Fin css del formulario */
+/* --- Fin css página de tickets --- */
+
+/* Media queries */
+
+@media (max-width: 900px){
+    /* Texto dentro del carousel */
+    .texto-breve{
+        position: absolute;
+        top: auto;
+    }
+}
+
+@media (max-width: 700px){
+    /* Texto dentro del carousel */
+    .texto-breve{
+        position: absolute;
+        top: auto;
+        right: auto;
+        text-align: left;
+        width: auto;
+        height: auto;
+        font-size: 11px;
+    }
+    
+    .texto-breve h2{
+        font-size: 12px;
+    }
+
+    .btn-margin{
+        margin: auto;
+        font-size: 11px;
+    }
+
+    /* Cards */
+    .container-3cards{
+        margin: auto;
+    }
+
+    /* Card de playa */
+    .top-margin-playa{
+        display: none;
+    }
+
+    .display-playa{
+        display: inline-block;
+    }
+
+    .estilo-card{
+        color: white;
+        background-color: #34393f;
+    }
+
+    /* Formulario */
+    .textarea-css{
+        width: 288px;
+        height: 100px;
+    }
+
+    .btn-form{
+        width: 288px;
+    }
+
+    .container-form input{
+        display: block;
+        width: 288px;
+    }
+}

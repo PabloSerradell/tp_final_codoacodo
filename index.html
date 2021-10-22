@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>TP integrador N° 1</title>
+  </head>
+  <body>
+
+  <header>
+    <!-- Inicio del navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid space-araund">
+          <a class="navbar-brand" href="index.html">
+            <img src="codoacodo.png" alt="logo de codo a codo">
+            Conf Bs As
+          </a>
+          <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                <a class="nav-link" href="#">Los oradores</a>
+                <a class="nav-link" href="#">El lugar y la fecha</a>
+                <a class="nav-link" href="#">Conviértete en orador</a>
+                <a class="nav-link text-success" href="tickets.html">Comprar tickets</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Fin del navbar -->
+
+    <!-- Inicio del carousel -->
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner height-carousel">
+        <div class="carousel-item active">
+          <img src="ba1.jpg" class="d-block w-100" alt="img1 buenos aires">
+        </div>
+        <div class="carousel-item">
+          <img src="ba2.jpg" class="d-block w-100" alt="img2 buenos aires">
+        </div>
+        <div class="carousel-item">
+          <img src="ba3.jpg" class="d-block w-100" alt="img3 buenos aires">
+        </div>
+
+        <!-- Inicio del texto dentro del carousel -->
+        <div class="texto-breve">
+          <h2>Conf Bs Ar</h2>
+          <p>Bs As llega por primera vez a Argentina. Un evento para compratir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+          <div>
+              <button type="button" class="btn btn-outline-light btn-margin">Quiero ser orador</button>
+              <a class="btn btn-success btn-margin" href="tickets.html" role="button">Comprar tickets</a>
+          </div>
+        </div>
+        <!-- Fin del texto dentro del carousel -->
+
+      </div>
+    </div>
+
+    <!-- Fin del carousel -->
+
+  </header>
+
+
+  <main>
+    <section>
+    <div class="padre-h2">
+      <h2 id="h2-1">CONOCÉ A LOS</h2>
+      <h2>ORADORES</h2>
+    </div>
+    <!-- Inicio de las cards -->
+    <div class="container-3cards">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="steve.jpg" class="card-img-top" alt="img Steve Jobs">
+            <div class="card-body">
+              <span class="badge bg-warning text-dark">JavaScript</span>
+              <span class="badge bg-warning react-span">React</span>
+              <h5 class="card-title">Steve Jobs</h5>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae earum labore sequi quidem! Quisquam mollitia ratione quibusdam? Esse assumenda, excepturi eos, sint alias, deserunt nulla dolore soluta et nobis id.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="bill.jpg" class="card-img-top" alt="img Bill Gates">
+            <div class="card-body">
+              <span class="badge bg-warning text-dark">JavaScript</span>
+              <span class="badge bg-warning react-span">React</span>
+              <h5 class="card-title">Bill Gates</h5>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae earum labore sequi quidem! Quisquam mollitia ratione quibusdam? Esse assumenda, excepturi eos, sint alias, deserunt nulla dolore soluta et nobis id.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="ada.jpeg" class="card-img-top" alt="img Ada Lovelace">
+            <div class="card-body">
+              <span class="badge bg-secondary">Negocios</span>
+              <span class="badge bg-danger">Startups</span>
+              <h5 class="card-title">Ada Lovelace</h5>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae earum labore sequi quidem! Quisquam mollitia ratione quibusdam? Esse assumenda, excepturi eos, sint alias, deserunt nulla dolore soluta et nobis id.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de las cards -->
+    </section>
+
+    <!-- Inicio card de playa -->
+
+    <section>
+    <div class="card mb-3 top-margin-playa">
+      <div class="row g-0">
+        <div class="col-md-4 margin-playa">
+          <img src="honolulu.jpg" class="img-fluid rounded-start" alt="img playa">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Bs As - Octubre</h5>
+            <p class="card-text">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refierre al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de superficie).</p>
+            <button type="button" class="btn btn-outline-light card-text btn-playa">Conocé más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Fin card de playa -->
+
+    <!-- Card playa secundaria para media queris -->
+
+    <div class="card mb-3 display-playa">
+      <img src="honolulu.jpg" class="card-img-top" alt="img playa honolulu">
+      <div class="card-body estilo-card">
+        <h5 class="card-title">Bs As - Octubre</h5>
+        <p class="card-text">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refierre al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de superficie).</p>
+        <button type="button" class="btn btn-outline-light card-text btn-playa">Conocé más</button>
+      </div>
+    </div>
+
+    <!-- Fin card playa secundaria -->
+
+    <!-- Inicio formulario -->
+
+    <section>
+    <div class="container-form">
+        <h3 id="h3-form">CONVIÉRTETE EN UN</h3>
+        <h3 id="h3-form-2">ORADOR</h3>
+        <p class="p-form">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+        <div>
+            <input type="text" class="form-control inputs-form" placeholder="Nombre">
+            <input type="text" class="form-control inputs-form" placeholder="Apellido">
+        </div>
+        <textarea name="comentario" class="form-control textarea-css" placeholder="¿Sobre qué quieres hablar?"></textarea>
+        <div>
+            <p class="p-form-2">Recuerda incluir un título para tu charla</p>
+            <button type="button" class="btn btn-success btn-form">Enviar</button>
+        </div>
+    </div>
+    </section>
+
+    <!-- Fin formulario -->
+  </main>
+
+  <footer>
+    
+    <div class="container">
+      <div class="row text-center centrar-row">
+        <div class="col col-footer"><a href="#">Preguntas frecuentes</a></div>
+        <div class="col col-footer"><a href="#">Contáctanos</a></div>
+        <div class="col col-footer"><a href="#">Prensa</a></div>
+        <div class="col col-footer"><a href="#">Conferencias</a></div>
+        <div class="col col-footer"><a href="#">Términos y condiciones</a></div>
+        <div class="col col-footer"><a href="#">Privacidad</a></div>
+        <div class="col col-footer"><a href="#">Estudiantes</a></div>
+      </div>
+    </div>
+    
+  </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
