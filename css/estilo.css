@@ -188,6 +188,11 @@ footer a:hover{
 /* Fin css del footer */
 
 /* --- Inicio css página de tickets --- */
+/* "Comprar tickets" en el nabvar" */
+.txt-comprar{
+    color: #97c93e !important;
+  }
+
 /* Cards con info de descuentos */
 .tamano-card{
     max-width: 190px;
@@ -266,6 +271,25 @@ footer a:hover{
 }
 /* Fin css del formulario */
 /* --- Fin css página de tickets --- */
+
+/* --- Inicio css página de registro --- */
+.input-regis{
+    width: 360px;
+    margin: 3px -1px 15px -1px;
+}
+
+.input-regis2{
+    width: 740px;
+}
+
+/* Botones borrar y resumen */
+.btn-form-regis{
+    width: 360px;
+    background-color: #96c93e;
+    border-color: #96c93e;
+    margin: 10px 4px 15px 4px;
+}
+/* --- Fin css página de registro --- */
 
 /* Media queries */
 
