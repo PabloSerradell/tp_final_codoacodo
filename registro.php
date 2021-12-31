@@ -14,6 +14,15 @@
   </head>
   <body>
 
+    <?php
+    if (isset($_GET['dni_repetido'])){
+      ?> <script>alert("Ya hay una persona registrada con ese DNI")</script> <?php
+    }
+    if (isset($_GET['correo_repetido'])){
+      ?> <script>alert("Ya hay una persona registrada con ese correo")</script> <?php
+    }
+    ?>
+    
   <header>
       
     <!-- Inicio del navbar -->
@@ -30,7 +39,7 @@
                 <a class="nav-link" href="index.html">La conferencia</a>
                 <a class="nav-link" href="#">Los oradores</a>
                 <a class="nav-link" href="#">El lugar y la fecha</a>
-                <a class="nav-link active" aria-current="page" href="registro.html">Registrarse</a>
+                <a class="nav-link active" aria-current="page" href="registro.php">Registrarse</a>
                 <a class="nav-link" href="listado.php">Listado</a>
                 <a class="nav-link txt-comprar" href="tickets.html">Comprar tickets</a>
               </div>
@@ -62,23 +71,51 @@
         <form action="control-basedd/insertar.php" method="POST">
         <div class="row">
             <div class="col">
-              <input type="text" class="form-control input-regis" placeholder="Nombre" name="nombre" required>
+              <input type="text" class="form-control input-regis" placeholder="Nombre" name="nombre"
+              <?php
+                  // Estas 5 incorporaciones de código PHP son para recuperar los datos con los que
+                  // intentó registrarse en caso de que haya elegido un dni o correo que ya estaban en la
+                  // base de datos
+                  if (isset($_GET['nom'])){ ?> 
+                    value="<?=$_GET['nom'] ?>"
+            <?php } ?>
+              required>
             </div>
             <div class="col">
-              <input type="text" class="form-control input-regis" placeholder="Apellido" name="apellido" required>
+              <input type="text" class="form-control input-regis" placeholder="Apellido" name="apellido"
+              <?php
+                  if (isset($_GET['ape'])){ ?> 
+                    value="<?=$_GET['ape'] ?>"
+            <?php } ?>
+              required>
             </div>
         </div>
         <div class="row">
             <div class="col">
-              <input type="text" class="form-control input-regis" placeholder="DNI" name="dni" required>
+              <input type="text" class="form-control input-regis" placeholder="DNI" name="dni"
+              <?php
+                  if (isset($_GET['dni'])){ ?> 
+                    value="<?=$_GET['dni'] ?>"
+            <?php } ?>
+              required>
             </div>
             <div class="col">
-              <input type="text" class="form-control input-regis" placeholder="Teléfono" name="telefono" required>
+              <input type="text" class="form-control input-regis" placeholder="Teléfono" name="telefono"
+              <?php
+                  if (isset($_GET['tel'])){ ?> 
+                    value="<?=$_GET['tel'] ?>"
+            <?php } ?>
+              required>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
-              <input type="email" class="form-control input-regis2" placeholder="Correo" name="correo" required>
+              <input type="email" class="form-control input-regis2" placeholder="Correo" name="correo"
+              <?php
+                  if (isset($_GET['corr'])){ ?> 
+                    value="<?=$_GET['corr'] ?>"
+            <?php } ?>
+              required>
             </div>
         </div>
         <div class="row mb-3">

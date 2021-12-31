@@ -24,6 +24,15 @@ $fila = mysqli_fetch_array($consulta);
   </head>
   <body>
 
+    <?php
+    if (isset($_GET['dni_repetido'])){
+      ?> <script>alert("Ya hay una persona registrada con ese DNI")</script> <?php
+    }
+    if (isset($_GET['correo_repetido'])){
+      ?> <script>alert("Ya hay una persona registrada con ese correo")</script> <?php
+    }
+    ?>
+
   <header>
       
     <!-- Inicio del navbar -->
@@ -40,7 +49,7 @@ $fila = mysqli_fetch_array($consulta);
                 <a class="nav-link" href="index.html">La conferencia</a>
                 <a class="nav-link" href="#">Los oradores</a>
                 <a class="nav-link" href="#">El lugar y la fecha</a>
-                <a class="nav-link" href="registro.html">Registrarse</a>
+                <a class="nav-link" href="registro.php">Registrarse</a>
                 <a class="nav-link" href="listado.php">Listado</a>
                 <a class="nav-link txt-comprar" href="tickets.html">Comprar tickets</a>
               </div>

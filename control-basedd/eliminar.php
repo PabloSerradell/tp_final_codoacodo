@@ -10,6 +10,4 @@ $borrar = mysqli_query($conexion, $accion);
 
 // Redirecciono a la tabla con los datos
 header("location: ../listado.php");
-
-mysqli_close($conexion);
 ?>
