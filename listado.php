@@ -34,8 +34,8 @@ $consulta = mysqli_query($conexion, "SELECT * FROM oradores");
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-link" href="index.html">La conferencia</a>
-                <a class="nav-link" href="#">Los oradores</a>
-                <a class="nav-link" href="#">El lugar y la fecha</a>
+                <a class="nav-link" href="index.html#seccion-oradores">Los oradores</a>
+                <a class="nav-link" href="index.html#seccion-lugar">El lugar y la fecha</a>
                 <a class="nav-link" href="registro.php">Registrarse</a>
                 <a class="nav-link active" aria-current="page" href="listado.php">Listado</a>
                 <a class="nav-link txt-comprar" href="tickets.html">Comprar tickets</a>

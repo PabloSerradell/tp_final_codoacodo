@@ -31,9 +31,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="index.html">La conferencia</a>
-                <a class="nav-link" href="#">Los oradores</a>
-                <a class="nav-link" href="#">El lugar y la fecha</a>
-                <a class="nav-link" href="registro.php">Registrarse</a>
+                <a class="nav-link" href="#seccion-oradores">Los oradores</a>
+                <a class="nav-link" href="#seccion-lugar">El lugar y la fecha</a>
+                <a class="nav-link" href="registro.php" >Registrarse</a>
                 <a class="nav-link" href="listado.php">Listado</a>
                 <a class="nav-link text-success" href="tickets.html">Comprar tickets</a>
               </div>
@@ -63,7 +63,7 @@
           <h2>Conf Bs Ar</h2>
           <p>Bs As llega por primera vez a Argentina. Un evento para compratir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
           <div>
-              <button type="button" class="btn btn-outline-light btn-margin">Quiero ser orador</button>
+              <a class="btn btn-outline-light btn-margin" href="#h3-form" role="button">Quiero ser orador</a>
               <a class="btn btn-success btn-margin" href="tickets.html" role="button">Comprar tickets</a>
           </div>
         </div>
@@ -78,85 +78,91 @@
 
 
   <main>
-    <section>
-    <div class="padre-h2">
-      <h2 id="h2-1">CONOCÉ A LOS</h2>
-      <h2>ORADORES</h2>
-    </div>
-    <!-- Inicio de las cards -->
-    <div class="container-3cards">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="img/steve.jpg" class="card-img-top" alt="img Steve Jobs">
-            <div class="card-body">
-              <span class="badge bg-warning text-dark">JavaScript</span>
-              <span class="badge bg-warning react-span">React</span>
-              <h5 class="card-title">Steve Jobs</h5>
-              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae earum labore sequi quidem! Quisquam mollitia ratione quibusdam? Esse assumenda, excepturi eos, sint alias, deserunt nulla dolore soluta et nobis id.</p>
+
+    <section id="seccion-oradores">
+
+      <div class="padre-h2">
+        <h2 id="h2-1">CONOCÉ A LOS</h2>
+        <h2>ORADORES</h2>
+      </div>
+      <!-- Inicio de las cards -->
+      <div class="container-3cards">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="img/steve.jpg" class="card-img-top" alt="img Steve Jobs">
+              <div class="card-body">
+                <span class="badge bg-warning text-dark">JavaScript</span>
+                <span class="badge bg-warning react-span">React</span>
+                <h5 class="card-title">Steve Jobs</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae earum labore sequi quidem! Quisquam mollitia ratione quibusdam? Esse assumenda, excepturi eos, sint alias, deserunt nulla dolore soluta et nobis id.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/bill.jpg" class="card-img-top" alt="img Bill Gates">
-            <div class="card-body">
-              <span class="badge bg-warning text-dark">JavaScript</span>
-              <span class="badge bg-warning react-span">React</span>
-              <h5 class="card-title">Bill Gates</h5>
-              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae earum labore sequi quidem! Quisquam mollitia ratione quibusdam? Esse assumenda, excepturi eos, sint alias, deserunt nulla dolore soluta et nobis id.</p>
+          <div class="col">
+            <div class="card">
+              <img src="img/bill.jpg" class="card-img-top" alt="img Bill Gates">
+              <div class="card-body">
+                <span class="badge bg-warning text-dark">JavaScript</span>
+                <span class="badge bg-warning react-span">React</span>
+                <h5 class="card-title">Bill Gates</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae earum labore sequi quidem! Quisquam mollitia ratione quibusdam? Esse assumenda, excepturi eos, sint alias, deserunt nulla dolore soluta et nobis id.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/ada.jpeg" class="card-img-top" alt="img Ada Lovelace">
-            <div class="card-body">
-              <span class="badge bg-secondary">Negocios</span>
-              <span class="badge bg-danger">Startups</span>
-              <h5 class="card-title">Ada Lovelace</h5>
-              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae earum labore sequi quidem! Quisquam mollitia ratione quibusdam? Esse assumenda, excepturi eos, sint alias, deserunt nulla dolore soluta et nobis id.</p>
+          <div class="col">
+            <div class="card">
+              <img src="img/ada.jpeg" class="card-img-top" alt="img Ada Lovelace">
+              <div class="card-body">
+                <span class="badge bg-secondary">Negocios</span>
+                <span class="badge bg-danger">Startups</span>
+                <h5 class="card-title">Ada Lovelace</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae earum labore sequi quidem! Quisquam mollitia ratione quibusdam? Esse assumenda, excepturi eos, sint alias, deserunt nulla dolore soluta et nobis id.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Fin de las cards -->
+      <!-- Fin de las cards -->
+
     </section>
 
-    <!-- Inicio card de playa -->
 
-    <section>
-    <div class="card mb-3 top-margin-playa">
-      <div class="row g-0">
-        <div class="col-md-4 margin-playa">
-          <img src="img/honolulu.jpg" class="img-fluid rounded-start" alt="img playa">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Bs As - Octubre</h5>
-            <p class="card-text">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refierre al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de superficie).</p>
-            <button type="button" class="btn btn-outline-light card-text btn-playa">Conocé más</button>
+    <section id="seccion-lugar">
+
+      <!-- Inicio card de playa -->
+
+      <div class="card mb-3 top-margin-playa">
+        <div class="row g-0">
+          <div class="col-md-4 margin-playa">
+            <img src="img/honolulu.jpg" class="img-fluid rounded-start" alt="img playa">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Bs As - Octubre</h5>
+              <p class="card-text">La Ciudad de Buenos Aires o Ciudad Autónoma de Buenos Aires ―también llamada Capital Federal por ser sede del gobierno federal― es la capital de la República Argentina. Está situada en la región centro-este del país, sobre la orilla occidental del Río de la Plata, en plena llanura pampeana. Los resultados definitivos del censo de 2010 estiman la población de la ciudad en 2.890.151 habitantes, y la de su aglomerado urbano, el Gran Buenos Aires, en 12.801.364 habitantes; siendo la mayor área urbana del país, la segunda de Sudamérica, Hispanoamérica y del hemisferio sur, y una de las 20 mayores ciudades del mundo. Es, junto a São Paulo y Ciudad de México, una de las tres ciudades latinoamericanas de categoría alfa, según el estudio GaWC. La ciudad de Buenos Aires se encuentra entre las ciudades con mayor calidad de vida de América Latina, y su renta per cápita se ubica entre las tres más altas de la región. Es la ciudad más visitada de América del Sur.</p>
+              <a class="btn btn-outline-light card-text btn-playa" href="https://www.buenosaires.gob.ar/laciudad/ciudad" target="_blank" role="button">Conocé más sobre esta ciudad</a><!-- 'target="_blank"' abre el link en otra pestaña -->
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    </section>
+    
+      <!-- Fin card de playa -->
 
-    <!-- Fin card de playa -->
+      <!-- Card playa secundaria para media queris -->
 
-    <!-- Card playa secundaria para media queris -->
-
-    <div class="card mb-3 display-playa">
-      <img src="honolulu.jpg" class="card-img-top" alt="img playa honolulu">
-      <div class="card-body estilo-card">
-        <h5 class="card-title">Bs As - Octubre</h5>
-        <p class="card-text">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refierre al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de superficie).</p>
-        <button type="button" class="btn btn-outline-light card-text btn-playa">Conocé más</button>
+      <div class="card mb-3 display-playa">
+        <img src="img/honolulu.jpg" class="card-img-top" alt="img playa honolulu">
+        <div class="card-body estilo-card">
+          <h5 class="card-title">Bs As - Octubre</h5>
+          <p class="card-text">La Ciudad de Buenos Aires o Ciudad Autónoma de Buenos Aires ―también llamada Capital Federal por ser sede del gobierno federal― es la capital de la República Argentina. Está situada en la región centro-este del país, sobre la orilla occidental del Río de la Plata, en plena llanura pampeana. Los resultados definitivos del censo de 2010 estiman la población de la ciudad en 2.890.151 habitantes, y la de su aglomerado urbano, el Gran Buenos Aires, en 12.801.364 habitantes; siendo la mayor área urbana del país, la segunda de Sudamérica, Hispanoamérica y del hemisferio sur, y una de las 20 mayores ciudades del mundo. Es, junto a São Paulo y Ciudad de México, una de las tres ciudades latinoamericanas de categoría alfa, según el estudio GaWC. La ciudad de Buenos Aires se encuentra entre las ciudades con mayor calidad de vida de América Latina, y su renta per cápita se ubica entre las tres más altas de la región. Es la ciudad más visitada de América del Sur.</p>
+          <a class="btn btn-outline-light card-text btn-playa" href="https://www.buenosaires.gob.ar/laciudad/ciudad" target="_blank" role="button">Conocé más sobre esta ciudad</a><!-- 'target="_blank"' abre el link en otra pestaña -->
+        </div>
       </div>
-    </div>
 
-    <!-- Fin card playa secundaria -->
+      <!-- Fin card playa secundaria -->
+
+    </section>
 
     <!-- Inicio formulario -->
 
@@ -178,6 +184,7 @@
     </section>
 
     <!-- Fin formulario -->
+
   </main>
 
   <footer>
