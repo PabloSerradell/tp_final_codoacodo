@@ -81,28 +81,28 @@ $fila = mysqli_fetch_array($consulta);
         <form action="control-basedd/actualizarbd.php" method="POST">
         <div class="row">
             <div class="col">
-              <input type="text" class="form-control input-regis" placeholder="Nombre" name="nombre" value="<?php echo $fila['nombre'] ?>" required>
+              <input type="text" class="form-control input-regis" placeholder="Nombre" maxlength="20" name="nombre" value="<?php echo $fila['nombre'] ?>" required>
             </div>
             <div class="col">
-              <input type="text" class="form-control input-regis" placeholder="Apellido" name="apellido" value="<?php echo $fila['apellido'] ?>" required>
+              <input type="text" class="form-control input-regis" placeholder="Apellido" maxlength="30" name="apellido" value="<?php echo $fila['apellido'] ?>" required>
             </div>
         </div>
         <div class="row">
             <div class="col">
-              <input type="text" class="form-control input-regis" placeholder="DNI" name="dni" value="<?php echo $fila['dni'] ?>" required>
+              <input type="text" class="form-control input-regis" placeholder="DNI" maxlength="12" name="dni" value="<?php echo $fila['dni'] ?>" required>
             </div>
             <div class="col">
-              <input type="text" class="form-control input-regis" placeholder="Teléfono" name="telefono" value="<?php echo $fila['telefono'] ?>" required>
-            </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col">
-              <input type="email" class="form-control input-regis2" placeholder="Correo" name="correo" value="<?php echo $fila['correo'] ?>" required>
+              <input type="text" class="form-control input-regis" placeholder="Teléfono" maxlength="20" name="telefono" value="<?php echo $fila['telefono'] ?>" required>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
-              <input type="password" class="form-control input-regis2" placeholder="Password" name="password" value="<?php echo $fila['password'] ?>" required>
+              <input type="email" class="form-control input-regis2" placeholder="Correo" maxlength="45" name="correo" value="<?php echo $fila['correo'] ?>" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+              <input type="password" class="form-control input-regis2" placeholder="Password" maxlength="20" name="password" value="<?php echo $fila['password'] ?>" required>
               <input type="hidden" name="id" value="<?php echo $fila['id'] ?>">
               <?php mysqli_close($conexion); ?>
             </div>

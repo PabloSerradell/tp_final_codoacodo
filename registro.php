@@ -71,7 +71,7 @@
         <form action="control-basedd/insertar.php" method="POST">
         <div class="row">
             <div class="col">
-              <input type="text" class="form-control input-regis" placeholder="Nombre" name="nombre"
+              <input type="text" class="form-control input-regis" placeholder="Nombre" maxlength="20" name="nombre"
               <?php
                   // Estas 5 incorporaciones de código PHP son para recuperar los datos con los que
                   // intentó registrarse en caso de que haya elegido un dni o correo que ya estaban en la
@@ -82,7 +82,7 @@
               required>
             </div>
             <div class="col">
-              <input type="text" class="form-control input-regis" placeholder="Apellido" name="apellido"
+              <input type="text" class="form-control input-regis" placeholder="Apellido" maxlength="30" name="apellido"
               <?php
                   if (isset($_GET['ape'])){ ?> 
                     value="<?=$_GET['ape'] ?>"
@@ -92,7 +92,7 @@
         </div>
         <div class="row">
             <div class="col">
-              <input type="text" class="form-control input-regis" placeholder="DNI" name="dni"
+              <input type="text" class="form-control input-regis" placeholder="DNI" maxlength="12" name="dni"
               <?php
                   if (isset($_GET['dni'])){ ?> 
                     value="<?=$_GET['dni'] ?>"
@@ -100,7 +100,7 @@
               required>
             </div>
             <div class="col">
-              <input type="text" class="form-control input-regis" placeholder="Teléfono" name="telefono"
+              <input type="text" class="form-control input-regis" placeholder="Teléfono" maxlength="20" name="telefono"
               <?php
                   if (isset($_GET['tel'])){ ?> 
                     value="<?=$_GET['tel'] ?>"
@@ -110,7 +110,7 @@
         </div>
         <div class="row mb-3">
             <div class="col">
-              <input type="email" class="form-control input-regis2" placeholder="Correo" name="correo"
+              <input type="email" class="form-control input-regis2" placeholder="Correo" maxlength="45" name="correo"
               <?php
                   if (isset($_GET['corr'])){ ?> 
                     value="<?=$_GET['corr'] ?>"
@@ -120,7 +120,7 @@
         </div>
         <div class="row mb-3">
             <div class="col">
-              <input type="password" class="form-control input-regis2" placeholder="Password" name="password" required>
+              <input type="password" class="form-control input-regis2" placeholder="Password" maxlength="20" name="password" required>
             </div>
         </div>
         <div>
